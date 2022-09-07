@@ -9,7 +9,6 @@ public class Percolation {
     private final int virtualTop;
     private final int virtualBottom;
     private int openSites;
-
     public Percolation(int n) {
         if (n <= 0) throw new IllegalArgumentException("N must be > 0");
         gridSize = n;
@@ -19,57 +18,37 @@ public class Percolation {
         virtualBottom = n * n + 1;
         virtualTop = n * n;
         openSites = 0;
-
     }
+
     public void open(int row, int col) {
         validateSite(row, col);
-        int shiftRow = row - 1;
-        int shiftCol = col - 1;
-        int flatIndex = flattenGrid(row, col) - 1;
+        int flatIndex = flattenGrid(row, col);
         if (isOpen(row, col)) {
             return;
         }
-        grid[shiftRow][shiftCol] = true;
+        grid[row - 1][col - 1] = true;
         openSites++;
-
         if (row == 1) {
             wqfGrid.union(virtualTop, flatIndex);
             wqfFull.union(virtualTop, flatIndex);
         }
-
         if (row == gridSize) {
             wqfGrid.union(virtualBottom, flatIndex);
         }
-
-        if (isOnGrid(row, col - 1) && isOpen(row, col - 1)) {
-            wqfGrid.union(flatIndex, flattenGrid(row, col - 1) - 1);
-            wqfFull.union(flatIndex, flattenGrid(row, col - 1) - 1);
-        }
-
-        if (isOnGrid(row, col + 1) && isOpen(row, col + 1)) {
-            wqfGrid.union(flatIndex, flattenGrid(row, col + 1) - 1);
-            wqfFull.union(flatIndex, flattenGrid(row, col + 1) - 1);
-        }
-
-        if (isOnGrid(row - 1, col) && isOpen(row - 1, col)) {
-            wqfGrid.union(flatIndex, flattenGrid(row - 1, col) - 1);
-            wqfFull.union(flatIndex, flattenGrid(row - 1, col) - 1);
-        }
-        if (isOnGrid(row + 1, col) && isOpen(row + 1, col)) {
-            wqfGrid.union(flatIndex, flattenGrid(row + 1, col) - 1);
-            wqfFull.union(flatIndex, flattenGrid(row + 1, col) - 1);
-        }
+        unitePositions(row, col, row, col - 1);
+        unitePositions(row, col, row, col + 1);
+        unitePositions(row, col, row - 1, col);
+        unitePositions(row, col, row + 1, col);
     }
 
     public boolean isOpen(int row, int col) {
         validateSite(row, col);
         return grid[row - 1][col - 1];
-
     }
 
     public boolean isFull(int row, int col) {
         validateSite(row, col);
-        return wqfFull.find(virtualTop) == wqfFull.find(flattenGrid(row, col) - 1);
+        return wqfFull.find(virtualTop) == wqfFull.find(flattenGrid(row, col));
     }
 
     public int numberOfOpenSites() {
@@ -82,7 +61,6 @@ public class Percolation {
 
     public static void main(String[] args) {
         int size = Integer.parseInt(args[0]);
-
         Percolation percolation = new Percolation(size);
         int argCount = args.length;
         for (int i = 1; argCount >= 2; i += 2) {
@@ -98,11 +76,19 @@ public class Percolation {
         if (!percolation.percolates()) {
             StdOut.print("Does not percolate %n");
         }
+    }
 
+    private void unitePositions(int rowCurr, int colCurr, int rowNeighbour, int colNeighbour) {
+        if (isOnGrid(rowNeighbour, colNeighbour) && isOpen(rowNeighbour, colNeighbour)) {
+            int flatIndexCurr = flattenGrid(rowCurr, colCurr);
+            int flatIndexNeighbour = flattenGrid(rowNeighbour, colNeighbour);
+            wqfGrid.union(flatIndexCurr, flatIndexNeighbour);
+            wqfFull.union(flatIndexCurr, flatIndexNeighbour);
+        }
     }
 
     private int flattenGrid(int row, int col) {
-        return gridSize * (row - 1) + col;
+        return gridSize * (row - 1) + col - 1;
     }
 
     private void validateSite(int row, int col) {
@@ -112,9 +98,7 @@ public class Percolation {
     }
 
     private boolean isOnGrid(int row, int col) {
-        int shiftRow = row - 1;
-        int shiftCol = col - 1;
-        return (shiftRow >= 0 && shiftCol >= 0 && shiftRow < gridSize && shiftCol < gridSize);
+        return (row >= 1 && col >= 1 && row <= gridSize && col <= gridSize);
     }
 }
 
