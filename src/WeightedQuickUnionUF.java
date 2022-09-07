@@ -1,9 +1,9 @@
 public class WeightedQuickUnionUF {
     private int[] id, sz;
-    public WeightedQuickUnionUF(int N) {
-        id = new int[N];
-        sz = new int[N];
-        for (int i = 0; i<N; i++) {
+    public WeightedQuickUnionUF(int n) {
+        id = new int[n];
+        sz = new int[n];
+        for (int i = 0; i<n; i++) {
             id[i] = i;
             sz[i] = 1;
         }

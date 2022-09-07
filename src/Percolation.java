@@ -1,66 +1,120 @@
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.WeightedQuickUnionUF;
+
 public class Percolation {
-    private boolean[][] grid;
-    private WeightedQuickUnionUF connected_components;
-    private int openSites, N;
+    private final boolean[][] grid;
+    private final WeightedQuickUnionUF wqfGrid;
+    private final WeightedQuickUnionUF wqfFull;
+    private final int gridSize;
+    private final int virtualTop;
+    private final int virtualBottom;
+    private int openSites;
 
-    // Creates an n-by-n grid with all sites initially blocked.
     public Percolation(int n) {
-        N = n;
-        grid = new boolean[n][n];
-        connected_components = new WeightedQuickUnionUF(n * n + 2);
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                grid[i][j] = false;
-            }
-        }
+        if (n <= 0) throw new IllegalArgumentException("N must be > 0");
+        gridSize = n;
+        grid = new boolean[gridSize][gridSize];
+        wqfGrid = new WeightedQuickUnionUF(n * n + 2); // includes virtual top bottom
+        wqfFull = new WeightedQuickUnionUF(n * n + 1); // includes virtual top
+        virtualBottom = n * n + 1;
+        virtualTop = n * n;
         openSites = 0;
-    }
 
-    // Opens the site (row, col) if it is not open already.
+    }
     public void open(int row, int col) {
-        row -= 1;
-        col -= 1;
-        if (!grid[row][col]) {
-            grid[row][col] = true;
-            openSites += 1;
-            if (row == 0) {
-                connected_components.union(0, col + 1);
-            } else if (row == N - 1) {
-                connected_components.union(row * N + col + 1, N * N + 1);
-            } else {
-                if (grid[row - 1][col]) {
-                    connected_components.union((row - 1) * N + col + 1, row * N + col + 1);
-                }
-                if (row < N - 1 && grid[row + 1][col]) {
-                    connected_components.union(row * N + col + 1, (row + 1) * N + col + 1);
-                }
-                if (col > 0 && grid[row][col - 1]) {
-                    connected_components.union(row * N + col, row * N + col + 1);
-                }
-                if (col < N - 1 && grid[row][col + 1]) {
-                    connected_components.union(row * N + col + 1, row * N + col + 2);
-                }
-            }
+        validateSite(row, col);
+        int shiftRow = row - 1;
+        int shiftCol = col - 1;
+        int flatIndex = flattenGrid(row, col) - 1;
+        if (isOpen(row, col)) {
+            return;
+        }
+        grid[shiftRow][shiftCol] = true;
+        openSites++;
+
+        if (row == 1) {
+            wqfGrid.union(virtualTop, flatIndex);
+            wqfFull.union(virtualTop, flatIndex);
+        }
+
+        if (row == gridSize) {
+            wqfGrid.union(virtualBottom, flatIndex);
+        }
+
+        if (isOnGrid(row, col - 1) && isOpen(row, col - 1)) {
+            wqfGrid.union(flatIndex, flattenGrid(row, col - 1) - 1);
+            wqfFull.union(flatIndex, flattenGrid(row, col - 1) - 1);
+        }
+
+        if (isOnGrid(row, col + 1) && isOpen(row, col + 1)) {
+            wqfGrid.union(flatIndex, flattenGrid(row, col + 1) - 1);
+            wqfFull.union(flatIndex, flattenGrid(row, col + 1) - 1);
+        }
+
+        if (isOnGrid(row - 1, col) && isOpen(row - 1, col)) {
+            wqfGrid.union(flatIndex, flattenGrid(row - 1, col) - 1);
+            wqfFull.union(flatIndex, flattenGrid(row - 1, col) - 1);
+        }
+        if (isOnGrid(row + 1, col) && isOpen(row + 1, col)) {
+            wqfGrid.union(flatIndex, flattenGrid(row + 1, col) - 1);
+            wqfFull.union(flatIndex, flattenGrid(row + 1, col) - 1);
         }
     }
 
-    // Returns the state of the (row, col) site.
     public boolean isOpen(int row, int col) {
-        return grid[row-1][col-1];
+        validateSite(row, col);
+        return grid[row - 1][col - 1];
+
     }
 
-    // Returns if there is an open path from the top to the (row, col) site.
     public boolean isFull(int row, int col) {
-        return connected_components.connected(0, (row-1) * N + col);
+        validateSite(row, col);
+        return wqfFull.find(virtualTop) == wqfFull.find(flattenGrid(row, col) - 1);
     }
 
-    // Returns the number of open sites in the grid.
     public int numberOfOpenSites() {
         return openSites;
     }
 
-    // Returns if the grid percolates or not.
     public boolean percolates() {
-        return connected_components.connected(0, N * N + 1);
+        return wqfGrid.find(virtualTop) == wqfGrid.find(virtualBottom);
+    }
+
+    public static void main(String[] args) {
+        int size = Integer.parseInt(args[0]);
+
+        Percolation percolation = new Percolation(size);
+        int argCount = args.length;
+        for (int i = 1; argCount >= 2; i += 2) {
+            int row = Integer.parseInt(args[i]);
+            int col = Integer.parseInt(args[i + 1]);
+            StdOut.printf("Adding row: %d  col: %d %n", row, col);
+            percolation.open(row, col);
+            if (percolation.percolates()) {
+                StdOut.printf("%nThe System percolates %n");
+            }
+            argCount -= 2;
+        }
+        if (!percolation.percolates()) {
+            StdOut.print("Does not percolate %n");
+        }
+
+    }
+
+    private int flattenGrid(int row, int col) {
+        return gridSize * (row - 1) + col;
+    }
+
+    private void validateSite(int row, int col) {
+        if (!isOnGrid(row, col)) {
+            throw new IllegalArgumentException("Index is out of bounds");
+        }
+    }
+
+    private boolean isOnGrid(int row, int col) {
+        int shiftRow = row - 1;
+        int shiftCol = col - 1;
+        return (shiftRow >= 0 && shiftCol >= 0 && shiftRow < gridSize && shiftCol < gridSize);
     }
 }
+
