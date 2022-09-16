@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Application of weighted union-find data structure for numerical computation of the percolation threshold.">
-      <change afterPath="$PROJECT_DIR$/src/Deque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Permutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RandomizedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Implementation of permutations using randomized queue" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662593874925</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implementation of permutations using randomized queue">
+      <created>1663364829193</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663364829193</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Application of weighted union-find data structure for numerical computation of the percolation threshold." />
-    <option name="LAST_COMMIT_MESSAGE" value="Application of weighted union-find data structure for numerical computation of the percolation threshold." />
+    <MESSAGE value="Implementation of permutations using randomized queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of permutations using randomized queue" />
   </component>
 </project>
