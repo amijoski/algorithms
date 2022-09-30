@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Implementation of permutations using randomized queue">
-      <change afterPath="$PROJECT_DIR$/src/SortingTechniques/BruteCollinearPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortingTechniques/FastCollinearPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortingTechniques/LineSegment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortingTechniques/Point.java" afterDir="false" />
+    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Implementation of a brute force algorithm to find chunks of collinear points together with an enhancement which uses sorting with respect to the angle in polar coordinates.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingTechniques/BruteCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortingTechniques/BruteCollinearPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingTechniques/FastCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortingTechniques/FastCollinearPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingTechniques/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortingTechniques/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663366336714</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implementation of a brute force algorithm to find chunks of collinear points together with an enhancement which uses sorting with respect to the angle in polar coordinates.">
+      <created>1664568549563</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664568549563</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +192,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Application of weighted union-find data structure for numerical computation of the percolation threshold." />
     <MESSAGE value="Implementation of permutations using randomized queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of permutations using randomized queue" />
+    <MESSAGE value="Implementation of a brute force algorithm to find chunks of collinear points together with an enhancement which uses sorting with respect to the angle in polar coordinates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of a brute force algorithm to find chunks of collinear points together with an enhancement which uses sorting with respect to the angle in polar coordinates." />
   </component>
 </project>

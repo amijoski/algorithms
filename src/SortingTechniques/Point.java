@@ -101,7 +101,7 @@ public class Point implements Comparable<Point> {
      */
     public static void main(String[] args) {
         // read the n points from a file
-        In in = new In(args[0]);
+        /*In in = new In(args[0]);
         int n = in.readInt();
         Point[] points = new Point[n];
         for (int i = 0; i < n; i++) {
@@ -120,12 +120,12 @@ public class Point implements Comparable<Point> {
         StdDraw.show();
 
         // print and draw the line segments
-        FastCollinearPoints collinear = new FastCollinearPoints(points);
+        BruteCollinearPoints collinear = new BruteCollinearPoints(points);
         for (int i = 0; i < collinear.numberOfSegments(); i++) {
             LineSegment ls = collinear.segments()[i];
             StdOut.println(collinear.segments()[i]);
             ls.draw();
         }
-        StdDraw.show();
+        StdDraw.show();*/
     }
 }
