@@ -8,14 +8,14 @@ public class Ball {
     private double rx, ry;
     private double vx, vy;
     private final double radius;
-    public Ball() {
+    public Ball(double r) {
         rx = StdRandom.uniformDouble();
         ry = StdRandom.uniformDouble();
         vx = StdRandom.uniformDouble(-1, 1);
         vy = StdRandom.uniformDouble(-1, 1);
         vx /= 2;
         vy /= 2;
-        radius = 0.01;
+        radius = r;
     }
 
     public void move(double dt) {

@@ -4,14 +4,14 @@ import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdOut;
 
 public class BouncingBalls {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         StdDraw.setXscale(0, 1.0);
         StdDraw.setYscale(0, 1.0);
         StdDraw.enableDoubleBuffering();
         int N = Integer.parseInt(args[0]);
         Ball[] balls = new Ball[N];
         for (int i = 0; i < N; i++) {
-            balls[i] = new Ball();
+            balls[i] = new Ball(0.01);
         }
         while(true) {
             StdDraw.clear();
@@ -22,5 +22,5 @@ public class BouncingBalls {
             StdDraw.show();
             StdDraw.pause(10);
         }
-    }
+    }*/
 }
