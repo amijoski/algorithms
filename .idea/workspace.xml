@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Simulation of particles that go through eachother but get reflected from walls.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/algs4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KdTree/KdTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KdTree/KdTreeVisualizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KdTree/NearestNeighbourVisualizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KdTree/PointSET.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KdTree/RangeSearchVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Kd Trees for implementing range search and nearest neighbour search in logarithmic time.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BouncingBalls/CollisionSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BouncingBalls/CollisionSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BouncingBalls/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BouncingBalls/Particle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +22,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "amijoski"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1e368575-d189-458a-a5ae-39ca9ed325d2" />
+        <option name="url" value="https://github.com/amijoski/algorithms.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="6vu3yopt" />
@@ -263,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1665589965848</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Kd Trees for implementing range search and nearest neighbour search in logarithmic time.">
+      <option name="closed" value="true" />
+      <created>1693926796148</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1693926796148</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,7 +297,8 @@
     <MESSAGE value="Implementation of permutations using randomized queue" />
     <MESSAGE value="Implementation of a brute force algorithm to find chunks of collinear points together with an enhancement which uses sorting with respect to the angle in polar coordinates." />
     <MESSAGE value="Simulation of particles that go through eachother but get reflected from walls." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simulation of particles that go through eachother but get reflected from walls." />
+    <MESSAGE value="Kd Trees for implementing range search and nearest neighbour search in logarithmic time." />
+    <option name="LAST_COMMIT_MESSAGE" value="Kd Trees for implementing range search and nearest neighbour search in logarithmic time." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
