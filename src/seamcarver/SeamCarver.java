@@ -1,10 +1,11 @@
-// package seamcarver;
+package seamcarver;
 
 import edu.princeton.cs.algs4.DirectedEdge;
 import edu.princeton.cs.algs4.EdgeWeightedDigraph;
 import edu.princeton.cs.algs4.Picture;
 import edu.princeton.cs.algs4.Topological;
 
+import java.awt.*;
 import java.util.Arrays;
 
 public class SeamCarver {
@@ -175,7 +176,7 @@ public class SeamCarver {
         energy = newEnergy;
         transposed = !transposed;
     }
-    /*
+
     private void showEnergyMatrix() {
         Picture tmpPic = new Picture(pic.width(), pic.height());
         double max = 0;
@@ -202,7 +203,6 @@ public class SeamCarver {
             transpose();
         }
     }
-    */
     private void recalculateEnergyMatrix() {
         double [][] newEnergy = new double[pic.width()][pic.height()];
         for (int i = 0; i < pic.width(); i++) {
@@ -255,18 +255,18 @@ public class SeamCarver {
     }
 
     public static void main(String[] args) {
-        // SeamCarver tmp = new SeamCarver(new Picture("HJoceanSmall.png"));
-        // tmp.picture().show();
-        // tmp.showEnergyMatrix();
-        // tmp.picture().show();
-        // tmp.transpose();
-        // tmp.showEnergyMatrix();
-        // tmp.picture().show();
-        /*for(int i = 0; i < 10; i++) {
+        SeamCarver tmp = new SeamCarver(new Picture("HJoceanSmall.png"));
+        tmp.picture().show();
+        tmp.showEnergyMatrix();
+        tmp.picture().show();
+        tmp.transpose();
+        tmp.showEnergyMatrix();
+        tmp.picture().show();
+        for(int i = 0; i < 10; i++) {
             tmp.colorRedLineToBeDeleted(tmp.findVerticalSeam());
             tmp.picture().show();
             tmp.removeVerticalSeam(tmp.findVerticalSeam());
             tmp.picture().show();
-        }*/
+        }
     }
 }

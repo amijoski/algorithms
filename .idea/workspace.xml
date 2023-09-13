@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Fast wordnet implementation">
-      <change afterPath="$PROJECT_DIR$/src/seamcarver/SeamCarver.java" afterDir="false" />
+    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Implementation of Seam Carver for horizontal and vertical resizing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seamcarver/SeamCarver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/seamcarver/SeamCarver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +276,7 @@
       <workItem from="1694609250375" duration="6516000" />
       <workItem from="1694616119057" duration="7103000" />
       <workItem from="1694624705347" duration="4271000" />
-      <workItem from="1694629093270" duration="33000" />
+      <workItem from="1694629093270" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="Application of weighted union-find data structure for numerical computation of the percolation threshold.">
       <created>1662556960590</created>
@@ -379,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694448578359</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implementation of Seam Carver for horizontal and vertical resizing">
+      <option name="closed" value="true" />
+      <created>1694629183848</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1694629183848</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,7 +411,8 @@
     <MESSAGE value="Simulation of particles that go through eachother but get reflected from walls." />
     <MESSAGE value="Kd Trees for implementing range search and nearest neighbour search in logarithmic time." />
     <MESSAGE value="Fast wordnet implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fast wordnet implementation" />
+    <MESSAGE value="Implementation of Seam Carver for horizontal and vertical resizing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of Seam Carver for horizontal and vertical resizing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
