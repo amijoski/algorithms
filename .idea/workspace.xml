@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Fast wordnet implementation">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/digraph1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hypernyms.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outcast11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outcast5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outcast8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wordnet/Outcast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wordnet/SAP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/wordnet/WordNet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synsets.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/seamcarver/SeamCarver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BouncingBalls/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bouncingballs/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BouncingBalls/BouncingBalls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bouncingballs/BouncingBalls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BouncingBalls/CollisionSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bouncingballs/CollisionSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BouncingBalls/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bouncingballs/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BouncingBalls/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bouncingballs/Particle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DequeAndRandomizedQueue/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dequeandrandomizedqueue/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DequeAndRandomizedQueue/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dequeandrandomizedqueue/Permutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DequeAndRandomizedQueue/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dequeandrandomizedqueue/RandomizedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KdTree/KdTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kdtree/KdTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KdTree/KdTreeVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kdtree/KdTreeVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KdTree/NearestNeighbourVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kdtree/NearestNeighbourVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KdTree/PointSET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kdtree/PointSET.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KdTree/RangeSearchVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kdtree/RangeSearchVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PercolationUsingUnionFind/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/percolationusingunionfind/Percolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PercolationUsingUnionFind/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/percolationusingunionfind/PercolationStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PercolationUsingUnionFind/WeightedQuickUnionUF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/percolationusingunionfind/WeightedQuickUnionUF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortingTechniques/BruteCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sortingtechniques/BruteCollinearPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortingTechniques/FastCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sortingtechniques/FastCollinearPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortingTechniques/LineSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sortingtechniques/LineSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortingTechniques/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sortingtechniques/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +33,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="1e368575-d189-458a-a5ae-39ca9ed325d2" />
+        <option name="accountId" value="88c00161-e4b5-41ce-95ba-0134cffdbf3d" />
         <option name="url" value="https://github.com/amijoski/algorithms.git" />
       </UrlAndAccount>
     </option>
@@ -85,36 +56,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/antonij/Documents/Projects/Java/Algorithms/hypernyms.txt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "configurable.group.tools",
-    "two.files.diff.last.used.file": "/home/antonij/Documents/Projects/Java/Algorithms/hypernyms.txt",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/antonij/Documents/Projects/Java/Algorithms/hypernyms.txt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/home/antonij/Documents/Projects/Java/Algorithms/hypernyms.txt&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PLAIN_TEXT",
-      "GitIgnore",
-      "JAVA"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;,
+      &quot;GitIgnore&quot;,
+      &quot;JAVA&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Application.wordnet.Outcast">
+}</component>
+  <component name="RunManager" selected="Application.SeamCarver">
     <configuration name="BouncingBalls" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bouncingballs.BouncingBalls" />
       <module name="Algorithms" />
@@ -206,6 +177,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeamCarver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <output_file path="asd.txt" is_save="true" />
+      <option name="MAIN_CLASS_NAME" value="seamcarver.SeamCarver" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="seamcarver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordNet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <output_file path="testEdgesOutput.txt" />
       <option name="MAIN_CLASS_NAME" value="wordnet.WordNet" />
@@ -251,6 +236,7 @@
     <list>
       <item itemvalue="Application.dequeandrandomizedqueue.Permutation" />
       <item itemvalue="Application.Permutation" />
+      <item itemvalue="Application.SeamCarver" />
       <item itemvalue="Application.SAP" />
       <item itemvalue="Application.wordnet.Outcast" />
       <item itemvalue="Application.Outcast" />
@@ -262,11 +248,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SeamCarver" />
         <item itemvalue="Application.wordnet.Outcast" />
         <item itemvalue="Application.SAP" />
         <item itemvalue="Application.WordNet" />
         <item itemvalue="Application.Outcast" />
-        <item itemvalue="Application.CollisionSystem" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +269,14 @@
       <workItem from="1694389342107" duration="3646000" />
       <workItem from="1694392996964" duration="9033000" />
       <workItem from="1694402098326" duration="355000" />
-      <workItem from="1694432601072" duration="15847000" />
+      <workItem from="1694432601072" duration="15979000" />
+      <workItem from="1694535198947" duration="3719000" />
+      <workItem from="1694549515317" duration="18363000" />
+      <workItem from="1694604466346" duration="4771000" />
+      <workItem from="1694609250375" duration="6516000" />
+      <workItem from="1694616119057" duration="7103000" />
+      <workItem from="1694624705347" duration="4271000" />
+      <workItem from="1694629093270" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="Application of weighted union-find data structure for numerical computation of the percolation threshold.">
       <created>1662556960590</created>
@@ -378,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693927062228</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fast wordnet implementation">
+      <option name="closed" value="true" />
+      <created>1694448578359</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694448578359</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
