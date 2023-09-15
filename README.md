@@ -1,4 +1,4 @@
-# algorithms
+# Algorithms
 1) BouncingBalls is an event-driven implementation of a mathematical N-body simulation. More information:
 https://introcs.cs.princeton.edu/java/34nbody/
 2) GeometricQuickSort is an implementation of quicksort for efficient detection of
@@ -24,3 +24,5 @@ https://coursera.cs.princeton.edu/algs4/assignments/seam/specification.php
 from a more specific family of synonyms to more abstract. Example: (dog, hound) -> (domestic_animal).
 More information:
 https://www.coursera.org/learn/algorithms-part2/programming/BCNsp/wordnet
+
+See https://algs4.cs.princeton.edu/code/ for details on how to setup environment.

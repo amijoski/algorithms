@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Application of the Ford-Fulkerson algorithm.">
+    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Adding description to readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -280,7 +280,8 @@
       <workItem from="1694715734383" duration="3848000" />
       <workItem from="1694738301556" duration="7272000" />
       <workItem from="1694747625223" duration="6547000" />
-      <workItem from="1694777026296" duration="1277000" />
+      <workItem from="1694777026296" duration="1323000" />
+      <workItem from="1694778572726" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="Application of weighted union-find data structure for numerical computation of the percolation threshold.">
       <created>1662556960590</created>
@@ -407,7 +408,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694754132317</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Adding description to readme">
+      <option name="closed" value="true" />
+      <created>1694778339873</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1694778339873</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +442,8 @@
     <MESSAGE value="Fast wordnet implementation" />
     <MESSAGE value="Implementation of Seam Carver for horizontal and vertical resizing" />
     <MESSAGE value="Application of the Ford-Fulkerson algorithm." />
-    <option name="LAST_COMMIT_MESSAGE" value="Application of the Ford-Fulkerson algorithm." />
+    <MESSAGE value="Adding description to readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding description to readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
