@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Implementation of Seam Carver for horizontal and vertical resizing">
+      <change afterPath="$PROJECT_DIR$/src/maxflowsports/BaseballElimination.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seamcarver/SeamCarver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/seamcarver/SeamCarver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dequeandrandomizedqueue/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomizedqueue/Deque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dequeandrandomizedqueue/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomizedqueue/Permutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dequeandrandomizedqueue/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomizedqueue/RandomizedQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sortingtechniques/BruteCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometricquicksort/BruteCollinearPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sortingtechniques/FastCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometricquicksort/FastCollinearPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sortingtechniques/LineSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometricquicksort/LineSegment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sortingtechniques/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometricquicksort/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +92,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.SeamCarver">
+  <component name="RunManager">
     <configuration name="BouncingBalls" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bouncingballs.BouncingBalls" />
       <module name="Algorithms" />
@@ -136,12 +143,12 @@
       </method>
     </configuration>
     <configuration name="Point" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sortingtechniques.Point" />
+      <option name="MAIN_CLASS_NAME" value="geometricquicksort.Point" />
       <module name="Algorithms" />
       <option name="PROGRAM_PARAMETERS" value="input.txt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sortingtechniques.*" />
+          <option name="PATTERN" value="geometricquicksort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,13 +212,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dequeandrandomizedqueue.Permutation" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dequeandrandomizedqueue.Permutation" />
+    <configuration name="randomizedqueue.Permutation" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="randomizedqueue.Permutation" />
       <module name="Algorithms" />
       <option name="PROGRAM_PARAMETERS" value="3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dequeandrandomizedqueue.*" />
+          <option name="PATTERN" value="randomizedqueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -234,7 +241,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.dequeandrandomizedqueue.Permutation" />
+      <item itemvalue="Application.randomizedqueue.Permutation" />
       <item itemvalue="Application.Permutation" />
       <item itemvalue="Application.SeamCarver" />
       <item itemvalue="Application.SAP" />
@@ -276,7 +283,10 @@
       <workItem from="1694609250375" duration="6516000" />
       <workItem from="1694616119057" duration="7103000" />
       <workItem from="1694624705347" duration="4271000" />
-      <workItem from="1694629093270" duration="162000" />
+      <workItem from="1694629093270" duration="203000" />
+      <workItem from="1694715734383" duration="3848000" />
+      <workItem from="1694738301556" duration="7272000" />
+      <workItem from="1694747625223" duration="6357000" />
     </task>
     <task id="LOCAL-00001" summary="Application of weighted union-find data structure for numerical computation of the percolation threshold.">
       <created>1662556960590</created>
@@ -387,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694629183848</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Implementation of Seam Carver for horizontal and vertical resizing">
+      <option name="closed" value="true" />
+      <created>1694629288235</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1694629288235</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

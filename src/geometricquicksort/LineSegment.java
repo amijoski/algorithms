@@ -1,4 +1,4 @@
-package sortingtechniques;
+package geometricquicksort;
 
 public class LineSegment {
     private final Point a, b;

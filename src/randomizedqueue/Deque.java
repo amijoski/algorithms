@@ -1,4 +1,4 @@
-package dequeandrandomizedqueue;
+package randomizedqueue;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

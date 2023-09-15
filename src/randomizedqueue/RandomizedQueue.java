@@ -1,4 +1,4 @@
-package dequeandrandomizedqueue;
+package randomizedqueue;
 
 import edu.princeton.cs.algs4.StdRandom;
 
