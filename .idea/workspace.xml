@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Implementation of Seam Carver for horizontal and vertical resizing">
-      <change afterPath="$PROJECT_DIR$/src/maxflowsports/BaseballElimination.java" afterDir="false" />
+    <list default="true" id="be5baf00-109f-4189-8768-27e1fb62497d" name="Changes" comment="Application of the Ford-Fulkerson algorithm.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dequeandrandomizedqueue/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomizedqueue/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dequeandrandomizedqueue/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomizedqueue/Permutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dequeandrandomizedqueue/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randomizedqueue/RandomizedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sortingtechniques/BruteCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometricquicksort/BruteCollinearPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sortingtechniques/FastCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometricquicksort/FastCollinearPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sortingtechniques/LineSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometricquicksort/LineSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sortingtechniques/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometricquicksort/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +85,7 @@
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.randomizedqueue.Permutation">
     <configuration name="BouncingBalls" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bouncingballs.BouncingBalls" />
       <module name="Algorithms" />
@@ -286,7 +279,8 @@
       <workItem from="1694629093270" duration="203000" />
       <workItem from="1694715734383" duration="3848000" />
       <workItem from="1694738301556" duration="7272000" />
-      <workItem from="1694747625223" duration="6357000" />
+      <workItem from="1694747625223" duration="6547000" />
+      <workItem from="1694777026296" duration="1277000" />
     </task>
     <task id="LOCAL-00001" summary="Application of weighted union-find data structure for numerical computation of the percolation threshold.">
       <created>1662556960590</created>
@@ -405,7 +399,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694629288235</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Application of the Ford-Fulkerson algorithm.">
+      <option name="closed" value="true" />
+      <created>1694754132317</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1694754132317</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +432,8 @@
     <MESSAGE value="Kd Trees for implementing range search and nearest neighbour search in logarithmic time." />
     <MESSAGE value="Fast wordnet implementation" />
     <MESSAGE value="Implementation of Seam Carver for horizontal and vertical resizing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of Seam Carver for horizontal and vertical resizing" />
+    <MESSAGE value="Application of the Ford-Fulkerson algorithm." />
+    <option name="LAST_COMMIT_MESSAGE" value="Application of the Ford-Fulkerson algorithm." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
